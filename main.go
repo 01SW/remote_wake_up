@@ -107,7 +107,7 @@ func handleHttp(w http.ResponseWriter, re *http.Request){
 	nic := re.Form.Get("nic")
 	var mer error
 	if nic == ""{
-		mer = makeOnLan(mac, "eth0")
+		mer = makeOnLan(mac, "wlx048d38d361ec")
 	}else{
 		mer = makeOnLan(mac, nic)
 	}
